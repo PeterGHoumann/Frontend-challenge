@@ -1,0 +1,98 @@
+:root {
+	--bgcolor-neutral: hsl(204, 43%, 93%);
+	--fntcolor-neutral: hsl(217, 26%, 39%);
+	--bgcolor-primary: hsl(179, 70%, 28%);
+	--fntcolor-primary: hsl(0, 93%, 41%);
+
+	--fntsize-neutral: 1rem;
+
+	--fntweight-neutral: 400;
+	--fntweight-bold: 800;
+
+	font-size: 16px;
+}
+* {
+	box-sizing: border-box;
+}
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+body {
+	background-color: var(--bgcolor-neutral);
+}
+p,
+li {
+	line-height: 1.5;
+}
+ul {
+	list-style: none;
+	padding-inline: 0;
+}
+.container {
+	margin-inline: 1rem;
+}
+
+main {
+	max-width: 580px;
+	padding-block-start: 2rem;
+	margin-inline: auto;
+	margin-block: 10vh;
+	background-color: hsl(0, 20%, 96%);
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px 1px hsl(0, 3%, 78%);
+}
+article {
+	padding-inline: 2rem;
+	padding-block-end: 1rem;
+}
+.col {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+h1 {
+	font-size: 1.5rem;
+	font-weight: var(--fntweight-bold);
+	color: var(--bgcolor-primary);
+}
+
+strong {
+	font-size: 2rem;
+}
+.subdue {
+	color: hsla(0, 0%, 100%, 0.895);
+}
+
+button {
+	display: block;
+	margin-block-start: 1.5rem;
+	background-color: var(--fntcolor-primary);
+	color: whitesmoke;
+	border: 0;
+	width: 100%;
+	text-align: center;
+	font-weight: var(--fntweight-bold);
+	padding: 1rem;
+	border-radius: 5px;
+}
+
+.community p:first-of-type {
+	font-size: 1.2rem;
+	color: var(--fntcolor-primary);
+}
+.community p {
+	color: var(--fntcolor-neutral);
+}
+
+.signup {
+	background-color: var(--bgcolor-primary);
+}
+.whyus {
+	background-color: hsl(179, 70%, 28%, 0.93);
+}
+
+.signup,
+.whyus {
+	color: white;
+}
